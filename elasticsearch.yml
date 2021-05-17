@@ -87,11 +87,18 @@ http.port: 9200
 #
 #action.destructive_requires_name: true
 #
-cluster.name: paris
-node.name: data
+cluster.name: (name you want ot assign to cluster)
+node.name: (master,data,ingest)
+#make it true only for master noes only.
 node.master: false
-node.data: true
-node.ingest: true
+# make it true for data node.
+#optional:Master node(a master node can work both as data node or ingest node)
+node.data: false
+#Make it true for ingest node.
+node.ingest: false
 discovery.zen.hosts_provider: ec2
-discovery.zen.ping.unicast.hosts: [172.31.10.71,172.31.8.117]
-network.host: [172.31.8.117]
+discovery.zen.ping.unicast.hosts: [mention the private ip of all the nodes,master,data,ingestion]
+network.host: [mention private ip of the node]
+
+# In case you want to setup security for the elasticsearch using x-pack.
+xpack.security.enabled: true
