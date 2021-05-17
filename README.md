@@ -1,4 +1,4 @@
-# Installing_elasticsearchcluster_using-terraform
+# Installing elasticsearch cluster usingterraform
 Installing elasticsearch cluster on AWS EC2 instance using terraform.
 
 # Once the elasticsearch is installed we need to make some changes in yaml file of elasticsearch.
