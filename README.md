@@ -10,6 +10,7 @@ http.port:  9200 (need to uncomment)
 
 # Added the below parameters, in order to setup authentication on ElasticSearch. 
 ###############################################################################################
+
 xpack.security.enabled: true
 
 http.cors.enabled: true
